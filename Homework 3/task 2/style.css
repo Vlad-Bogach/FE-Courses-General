@@ -1,0 +1,14 @@
+table {
+    width: 80%;
+    margin: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+}
+
+table tr td:nth-child(3) {
+    text-align: center;
+}

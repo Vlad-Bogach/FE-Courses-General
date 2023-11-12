@@ -1,0 +1,44 @@
+.frame {
+    padding: 20px;
+    color: white;
+    background-color: blueviolet;
+    outline: 2px solid white;
+    outline-offset: -5px;
+    width: 30%;
+
+}
+
+.TMNT {
+    width: 30%;
+    border-spacing: 2px;
+    margin-top: 50px;
+}
+
+.TMNT td, .TMNT th {
+    background-color: rgb(150, 246, 150);
+    font-size: 15px;
+    padding: 7px;
+
+}
+
+.world-wonders {
+    width: 100%;
+    border-spacing: 2px;
+    margin-top: 50px;
+}
+
+.world-wonders td {
+    background-color: rgb(184, 107, 12);
+    color: white; 
+    padding: 10px;
+}
+
+.world-wonders tr:nth-child(1) td{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.world-wonders tr:nth-last-child(1) td{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

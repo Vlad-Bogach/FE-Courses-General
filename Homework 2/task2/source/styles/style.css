@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,500;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html {
+    font-size: 5px;
+}
+
+.main-container {
+    box-sizing: border-box;
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    font-family: Raleway;
+    padding-inline: 15px;
+}
+
+.main-container__element {
+    text-align: center;
+}
+
+.main-container__element_header {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    font-size: 7rem;
+    font-weight: 450;
+    text-transform: uppercase;
+}
+
+.main-container__element_line{
+   display: flex;
+}
+
+.main-container__element_line .line {
+    width: 15%;
+    border-top: .4rem solid #EC7979;
+    margin: auto;
+}
+
+.main-container__element_small-text {
+    margin-top: 9rem;
+    font-size: 5rem;
+    font-weight: 400;
+    color:gray;
+}
+
+.main-container__element_content {
+    margin-top: 19rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+}
+
+.content-card__image img{
+    width: 18.5rem; 
+    height: 18.5rem;
+    margin: auto;
+}
+
+.content-card__title {
+    margin-top: 18.5rem;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content-card__text {
+    font-size: 5rem;
+    margin-top: 9rem;
+}

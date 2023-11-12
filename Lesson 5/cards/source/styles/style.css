@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
+
+.main-container {
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container__top-text {
+    width: 505px;
+    margin-bottom: 25px;
+}
+
+.top-text__title {
+    width: 100%;
+    font-size: 32.25px;
+    text-align: center;
+    margin-bottom: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-text__description {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    height: 65px;
+    color: #434241;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container__cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container__cards_big {
+    margin-bottom: 57px;
+}
+
+.card_big, .card_small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container__cards_big .card__image {
+    width: 555px;
+    height: 420px;
+    background-color: #FCF2EB;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.main-container__cards_small .card__image {
+    width: 360px;
+    height: 273px;
+    background-color: #FCF2EB;
+    border-radius: 10px;
+    margin-bottom: 23px;
+}
+
+.card__image {
+    display: flex;
+}
+
+.card__image img {
+    margin: auto;
+}
+
+.card__bottom-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-text__title {
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bottom-text__details {
+    font-size: 16px;
+    color: #E27B3A;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.card_big .bottom-text__title{
+    font-size: 25px;
+    height: 40px;
+}
+
+.card_small .bottom-text__title{
+    font-size: 20px;
+    height: 40px;
+}
+
+.card_big .card__bottom-text {
+    height: 68px;
+}
+
+.card_small .card__bottom-text {
+    height: 57px;
+}
+
+.main-container__button {
+    margin-top: 46px;
+    width: 185px;
+    height: 48px;
+    font-size: 16px;
+    border: 1px solid #E27B3A;
+    border-radius: 4px;
+    background-color: white;
+    color: #E27B3A;
+}
+
+
+
+

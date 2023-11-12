@@ -1,0 +1,29 @@
+<!--Задание1-->
+
+<table>
+ <tr><th colspan="2">Черепашки-ниндзя</th></tr>
+ <tr><td>Имя</td><td>Оружие</td></tr>
+ <tr><td>Леонардо</td><td>Катаны</td></tr>
+ <tr><td>Рафаэль</td><td>Кинжалы-сай</td></tr>
+ <tr><td>Донателло</td><td>Шест-бо</td></tr>
+ <tr><td>Микеланджело</td><td>Нунчаки</td></tr>
+</table>
+
+<!--Задание2-->
+
+td {
+	background-color: #ececec;
+  	padding: 0.5rem;
+}
+
+
+<!--Задание3-->
+
+table {
+  border-spacing: 4px;
+}
+td {
+  color: #fff;
+  background-color: #4c715b;
+  padding: 5px;
+}

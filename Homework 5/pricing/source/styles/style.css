@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;700&display=swap');
+
+.pricing {
+    width: 1508px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #F5F5F5;
+
+    padding-inline: 170px;
+}
+
+.pricing__title {
+    margin-top: 50px;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.pricing__line{
+    width: 170px;
+    border-top: 1px solid #EC7979;
+}
+
+.pricing__description {
+    margin-top: 40px;
+
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #86878B;
+
+    text-align: center;
+}
+
+.pricing__cards {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin-top:80px;
+    width: 370px;
+    border: 2px solid #F5F5F5;
+}
+
+.card_advanced {
+    margin-top: 60px;
+    margin-inline: 30px;
+    box-shadow: 0px 4px 10px 0px #33333333;
+    align-self: flex-start;
+}
+
+.card__field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+.card__tariff{
+    color: #FFFFFF;
+    background-color: #333333;
+    height: 60px;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.card__price {
+    color: #FFFFFF;
+    background-color: #333333;
+    height: 100px;
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    border-top: 2px solid #F5F5F5;
+    border-bottom: 2px solid #F5F5F5;
+}
+
+.card__price-for-life {
+    color: #86878B;
+    background-color: #333333;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.card__space-capacity {
+    height: 50px;
+    border-top: 2px solid #F5F5F5;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background-color: #FFFFFF;
+    color: #86878B;
+}

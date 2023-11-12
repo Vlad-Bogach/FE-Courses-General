@@ -1,0 +1,78 @@
+html {
+    font-size: 10px;
+}
+
+.table {
+    width: 25rem;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.orange, .green, .violet, .blue {
+    height: 6rem;
+    width: 23rem;
+
+    font-size: 2rem;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.frame1 {
+    padding: 10px;
+    margin-top: 20px;
+    font-size:medium;
+    overflow: auto;
+    height: 200px;
+    width: 200px;
+    border: 2px solid red;
+    text-align:justify;
+
+}
+.frame2 {
+    margin-top: 20px;
+    font-size:medium;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    border: 2px solid green;
+    text-align:justify;
+
+}
+
+.main-container {
+    width: 50%;
+    padding: 2rem;
+    display:flex;
+    justify-content: space-between;
+    background-color: burlywood;
+    
+}
+.main-container__element {
+    display: flex;
+    flex-direction:column;
+}
+.main-container__element img {
+    height: 300px;
+    width: 150px;
+}
+
+.main-container__element_border-red{
+    border: 2px solid red;
+}
+
+.main-container__element_border-green{
+    border: 2px solid green;
+}
+
+.main-container__element_border-blue{
+    border: 2px solid blue;
+}
+
+

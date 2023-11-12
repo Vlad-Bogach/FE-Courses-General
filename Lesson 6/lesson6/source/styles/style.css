@@ -1,0 +1,329 @@
+.task1{
+    width: 500px;
+
+}
+
+.task1__article{
+    text-align: justify;
+}
+
+.task1__article span:first-child {
+color: red;
+}
+
+.task1__article span:last-child {
+    color: rgb(4, 250, 4);
+}
+
+.task2{
+    margin-top: 50px;
+    display: flex;
+}
+
+.task2__list li:first-child{
+    color: red;
+}
+
+.task2__list li:last-child{
+    color: rgb(4, 250, 4);
+}
+
+.task3{
+    margin-top: 50px;
+    display: flex;
+}
+
+.task3__list li:nth-child(even){
+    color: red;
+}
+
+.task3__list li:nth-child(odd){
+    color: rgb(4, 250, 4);
+}
+
+.task4{
+    width: 500px;
+}
+
+.task4 p:not(.text){
+    color: red;
+}
+
+.task5{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.task5 .task5__element:first-child:active{
+    color: blue;
+    text-decoration: none;
+}
+
+.task5 .task5__element:nth-child(2):active{
+    color: green;
+    text-decoration: none;
+}
+
+.task5 .task5__element:last-child:active{
+    color: black;
+    text-decoration: none;
+}
+
+.task{
+    margin-top: 50px;
+}
+
+.task6 ul li{
+    list-style: none;
+}
+
+.task6 li{
+    position: relative;
+    padding-left: 15px;
+}
+
+.list-elem::before{
+    content: "";
+    width:10px;
+    height: 10px;
+    background-color: red;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+}
+
+.task7{
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+}
+
+.task7 .square{
+    height: 50px;
+    width: 50px;
+    border: 2px solid red;
+    position:absolute;
+}
+
+.task7 .square_red{
+    top: 0;
+    left: 0;
+}
+
+.task7 .square_blue{
+    border-color: blue;
+    top: 60px;
+    left: 60px;
+}
+
+.task7 .square_green{
+    border-color: green;
+    top: 120px;
+    left: 120px;
+}
+
+.task8{
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+}
+
+.task8 .square{
+    height: 50px;
+    width: 50px;
+    border: 2px solid red;
+    position: absolute;
+}
+
+.task8 .square_red{
+    top: 0;
+    left: 0;
+}
+
+.task8 .square_blue{
+    border-color: blue;
+    top: 30px;
+    left: 30px;
+}
+
+.task8 .square_green{
+    border-color: green;
+    top: 60px;
+    left: 60px;
+}
+
+.task9{
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+}
+
+.task9 .square{
+    height: 50px;
+    width: 50px;
+    border: 2px solid red;
+    position: absolute;
+}
+
+.task9 .square_red{
+    background-color: red;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.task9 .square_blue{
+    z-index: 1;
+    background-color: blue;
+    border-color: blue;
+    top: 30px;
+    left: 30px;
+}
+
+.task9 .square_green{
+    z-index: 0;
+    border-color: green;
+    background-color: green;
+    top: 60px;
+    left: 60px;
+}
+
+.task10{
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+}
+
+.task10 .square{
+    height: 50px;
+    width: 50px;
+    border: 2px solid red;
+    position: absolute;
+}
+
+.task10 .square_red{
+    background-color: red;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+.task10 .square_blue{
+    z-index: 1;
+    background-color: blue;
+    border-color: blue;
+    top: 30px;
+    left: 30px;
+}
+
+.task10 .square_green{
+    z-index: 2;
+    border-color: green;
+    background-color: green;
+    top: 60px;
+    left: 60px;
+}
+
+.task11{
+    background-color: forestgreen;
+    margin-top: 50px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    position:relative;
+}
+
+.task11__square{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    position: absolute;
+}
+
+.task11__square_first{
+    top: 20px;
+    left: 20px;
+}
+
+.task11__square_second{
+    bottom: 20px;
+    right: 20px;
+}
+
+.task12{
+    height: 800px;
+    width: 700px;
+    position: relative;
+}
+
+.task12__block_left{
+    width: 200px;
+    height: 100%;
+    background-color:olivedrab;
+    position: absolute;
+}
+
+.task12__block_fixed{
+    width: 600px;
+    height: 200px;
+    background-color:brown;
+    position: sticky;
+    top: 150px;
+    left: 100px;
+}
+
+.task13{
+    margin-top: 50px;
+    width: 290px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    padding-bottom: 26px;
+}
+
+.task13__image{
+    width: 100%;
+    height: 120px;
+    align-self: self-start;
+}
+
+.task13__profile{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 70px;
+}
+
+.task13__name{
+    display: flex;
+    margin-top: 72px;
+}
+.task13__name span{
+    margin-right: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.task13__text{
+    text-align: center;
+    font-size: 10px;
+    margin-top: 10px;
+    width: 240px;
+}
+
+
+
+
+
+
+
+
+

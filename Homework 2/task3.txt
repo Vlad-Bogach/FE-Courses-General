@@ -1,0 +1,81 @@
+<!--Задание1-->
+
+<h3>Работы Микеланджело</h3>
+<ul>
+	<li>Бахус</li>
+	<li>Давид</li>
+	<li>Пьета</li>
+</ul>
+
+<!--Задание2-->
+
+<ol> 
+	<li>Half-Life 2: Episode One</li>
+ 	<li>Half-Life 2: Episode Two</li>
+ 	<li>Half-Life 2: Episode Three</li>
+</ol>
+
+<!--Задание3-->
+
+<ol start="11"> 
+	<li>Николай I</li>
+ 	<li>Александр II</li>
+ 	<li>Александр III</li>
+ 	<li>Николай II</li>
+</ol>
+
+<!--Задание4-->
+
+<ul>
+ <li>Российские императоры
+  <ul>
+  	<li>Пётр I Великий</li>
+	<li>Екатерина I</li>
+  	<li>Пётр II</li>
+  	</ul>
+  </li>
+</ul>
+
+<!--Задание5-->
+
+ul {
+  list-style-type: square;
+}
+
+<!--Задание6-->
+
+ ul {
+   list-style-type: none;
+}
+
+<!--Задание7-->
+
+li::before {
+  content: 'C'
+}
+
+ul{
+  list-style-type: none;
+}
+
+<!--Задание8-->
+
+ul {
+  list-style-image: url(/example/image/book.png)
+}
+
+<!--Задание9-->
+
+li {
+  display: inline-block;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+

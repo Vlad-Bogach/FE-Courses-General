@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600&display=swap');
+
+*{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.block-wrapper {
+    box-sizing: border-box;
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-wrapper__block {
+    box-sizing: border-box;
+    padding-left: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 555px;
+    height: 296px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    linear-gradient(257.26deg, #008BF0 -13.2%, #D943C9 130.95%);
+}
+
+.block-wrapper__block img {
+    position: absolute;
+}
+
+.block__description{
+    height: 147px;
+    width: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description__text {
+    color: #F4F9FC;
+    text-transform: uppercase;
+}
+
+.description__text span{
+    text-transform:none;
+}
+
+.description__text_top {
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+.description__text_middle {
+    font-size: 31px;
+    font-weight: 600;
+}
+
+.description__text_bottom {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.block-wrapper__block_left img {
+    margin-left: 200px;
+}
+
+.block-wrapper__block_right img {
+    margin-left: 225px;
+}
