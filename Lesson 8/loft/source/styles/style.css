@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.loft{
+    width: 1400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.loft__top-line{
+    width: 100%;
+    height: 38px;
+    background-color: #313131;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-left: 140px;
+    padding-right: 120px;
+    justify-content: space-between;
+}
+
+.top-line__content{
+    display: flex;
+}
+
+.top-line__link{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.top-line__link_middle{
+    text-decoration: none;
+    margin-inline: 30px;
+}
+
+.top-line__element{
+    display: flex;
+}
+
+.top-line__element_left{
+    margin-right: 30px;
+}
+
+.top-line__element img{
+    margin-right: 10px;
+}
+
+.loft__content{
+    width: 100%;
+    padding-left: 140px;
+    padding-right: 120px;
+    box-sizing: border-box;
+}
+
+.loft__search{
+    margin-top:20px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search__input-container{
+    width: 839px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 38px;
+    padding-left: 15px;
+    border: 1px solid #E6E6E6;
+    margin-right: 37px;
+}
+
+.search__input-container img{
+    margin-right: 20px;
+}
+
+.search__input-box{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.search__icons{
+    width: 112px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.loft__header{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding-inline: 40px;
+    height: 70px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px 0px #00000012;
+}
+
+.header__element{
+    display: flex;
+}
+
+.header__element a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #414141;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.header__element img {
+    margin-right: 10px;
+}
+
+.loft__slider{
+    box-sizing: border-box;
+    width: 100%;
+    height: 450px;
+    margin-top: 30px;
+    position: relative;
+    background-image: url(../images/slider_back.png);
+}
+
+
+.slider__text{
+    margin-top: 100px;
+    margin-left: 120px;
+}
+
+.text__name{
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}

@@ -62,6 +62,19 @@
             </div>
         </div>
     </section>
+
+    <section class="custom-counter">
+        <button id="button-counter">Click me!</button>
+    </section>
+
+    <script>
+        let count = 0
+        let element = document.getElementById('button-counter')
+        element.addEventListener('click', () => {
+            count++
+            document.querySelector('.custom-counter::before').style.content = 5пше5
+        })
+    </script>
 </body>
 
 </html>
