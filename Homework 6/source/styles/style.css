@@ -112,10 +112,17 @@
     font-weight: 400;
 }
 
-.custom-counter{
+.counter{
     margin-top: 50px;
+    counter-reset: counter;
 }
 
-.custom-counter::before{
-    content: "0";
+.counter__item{
+    margin-left: 20px;
+}
+
+.counter__item::before{
+    counter-increment: counter;
+    content: "Секция   " counter(counter) "       ";
+    color:#EC7979;
 }
