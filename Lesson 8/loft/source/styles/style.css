@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap');
 *{
     padding: 0;
@@ -131,13 +132,15 @@
     height: 450px;
     margin-top: 30px;
     position: relative;
-    background-image: url(../images/slider_back.png);
+    background-image: url(../images/slider_back.jpg);
 }
 
 
 .slider__text{
-    margin-top: 100px;
-    margin-left: 120px;
+    position: absolute;
+    box-sizing: border-box;
+    top: 100px;
+    left: 120px;
 }
 
 .text__name{
@@ -145,4 +148,216 @@
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     text-transform: uppercase;
+    max-width: 216px;
+    line-height: 1;
+}
+
+.slider__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 210px;
+}
+
+.slider__button_active{
+    background-color: #9D9D9D47;
+    left: 25px;
+}
+
+.slider__button_not-active{
+    background-color: #FFFFFF;
+    right: 25px;
+}
+
+.slider__button_not-active img{
+    width: 4px;
+    height: 8px;
+    background: transparent;
+}
+
+.slider__subtext{
+    position: absolute;
+    top: 221px;
+    left: 121px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #343434;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.slider__button_bottom{
+    top: 264px;
+    left: 120px;
+    background-color: white;
+    color: #414141;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 163px;
+    height: 45px;
+    border: none;
+    text-transform: uppercase;
+
+}
+
+.loft__hits{
+    font-size:  16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    color: #414141;
+}
+
+.loft__goods{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.goods__card{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 263px;
+    box-sizing: border-box;
+    margin-bottom: 21px;
+    padding-bottom: 32px;
+    /* align-self: start; */
+    z-index: 0;
+}
+
+.goods__card img:not(.card__favourites-icon){
+    margin-top: 53px;
+
+}
+
+.card__favourites-icon{
+    position: absolute;
+    top: 21px;
+    right: 16px;
+}
+
+.card__description{
+    align-self:flex-start;
+    margin-left: 20px;
+    margin-top: 54px;
+}
+
+.card__name, .card__type, .card__price, .card__price span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #414141;
+}
+
+.card__type{
+    font-weight: 400;
+    margin-top: 6px;
+    font-size: 11px;
+}
+
+.card__price{
+    font-size: 16px;
+    margin-top: 9px;
+}
+
+.card__price span{
+    font-size: 12px;
+    color: #CCCCCC;
+    text-decoration: line-through;
+    margin-left: 6px;
+}
+
+.card__discount{
+    display: flex;
+    position: absolute;
+    top: 21px;
+    left: 18px;
+    align-items: center;
+}
+
+
+.card__discount h5{
+    margin-left: 7px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.goods__card:hover{
+    box-shadow: 0px 1px 9px 0px #0000001C;
+    z-index: 1;
+}
+
+.card__measurements{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    padding-left: 20px;
+    
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -110px;
+}
+
+.measurements-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #414141;
+    margin-top: 15px;
+    align-self: flex-start;
+}
+
+.measurements__values{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-self: start;
+}
+
+.parameter{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 8px;
+    font-size: 9px;
+    color: #C4C4C4;
+    text-transform: uppercase;
+}
+
+.value{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 8px;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #414141;
+}
+
+.measurements__button{
+    width: 223px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    margin-top: 17px;
+    background-color: #245462;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+    align-self: start;
+}
+
+.goods__card:hover .card__measurements{
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 10px 9px 0px #0000001C;
 }
