@@ -1,0 +1,52 @@
+body {
+  justify-content: center;
+  padding-inline: 15%;
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.form-contacts-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+}
+
+.input-wrapper {
+  flex-direction: column;
+  display: flex;
+}
+
+.name-email {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+input, textarea {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: inset 1px 1px 5px #00000012;
+}
+
+#your-name {
+  width: 207px;
+  height: 38px;
+  margin-right: 10px;
+}
+
+#your-email {
+  width: 240px;
+  height: 38px;
+}
+
+#your-message {
+  resize: none;
+  width: 457px;
+}
+
+/*# sourceMappingURL=index.75f14d4e.css.map */
