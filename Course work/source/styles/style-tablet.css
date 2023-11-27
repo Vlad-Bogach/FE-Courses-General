@@ -1,0 +1,27 @@
+@media only screen and (max-width: 1024px){
+    .banner__logo img {
+        height: 100px;
+        width: 231px;
+    }
+
+    .header__link{
+        font-size: 12px;
+        width: 112px;
+    }
+
+    .banner__title{
+        font-size: 48px;
+        margin-top: 157px;
+    }
+
+    .banner__subtext{
+        font-size: 18px;
+        margin-top: 62px;
+    }
+
+    .banner__button{
+        width: 314px;
+        margin-top: 89px;
+        margin-bottom: 126px;
+    }
+}

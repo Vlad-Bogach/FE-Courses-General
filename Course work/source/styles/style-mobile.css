@@ -1,0 +1,38 @@
+@media only screen and (max-width: 870px){
+    
+    .header__burger{
+        display: flex;
+        width: unset;
+    }
+    
+    .header__link:not(.header__burger){
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .banner__header{
+        border: none;
+    }
+
+    .banner__logo{
+        width: 130px;
+    }
+
+    .banner__title{
+        font-size: 36px;
+        margin-top: 50px;
+    }
+
+    .banner__subtitle{
+        font-size: 14px;
+        margin-top: 33px;
+    }
+
+    .banner__button{
+        width: 280px;
+        height: 60px;
+        margin-top: 49px;
+        margin-bottom: 52px;
+    }
+}
