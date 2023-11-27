@@ -1,0 +1,70 @@
+.balls{
+    display: flex;
+    margin: 100px;
+}
+
+.ball{
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.ball-left{
+    transform-origin: 30px -75px;
+    animation: left 1s ease-out;
+    animation-iteration-count: infinite;
+}
+
+.ball-right{
+    transform-origin: -30px -75px;
+    animation: right 1s ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes left{
+    0%{transform: translateX(0);
+        transform: rotate(0);}
+    25%{
+        transform: rotate(45deg);
+    }
+
+    50%{transform: rotate(0);}
+}
+
+@keyframes right{
+    50%{transform: translateX(0);
+        transform: rotate(0);}
+
+    75%{transform: rotate(-45deg);}
+    100%{
+        transform: rotate(0);
+    }
+}
+
+.circle{
+    margin-top: 200px;
+    margin-left: 200px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: green;
+    animation: pulse 2s;
+    
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(0.5,0.5);
+    }
+
+    50%{
+        transform: scale(1, 1);
+    }
+
+    100%{
+        transform: scale(0.5,0.5);
+    }
+}
+
