@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+@mixin font{
+    color: #1C1D28;
+    font-family: 'Montserrat', sans-serif;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1110px;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 65px;
+    justify-content: space-between;
+}
+
+.header__logo-and-nav{
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.nav__element, .header__phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 13px;
+    @include font;
+    font-weight: 500;
+    
+}
+
+.header__phone-and-button{
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+    align-items: center;
+}
+
+.header__button{
+    width: 171px;
+    height: 41px;
+    background-color: #5551F7;
+    font-size: 13px;
+    font-weight: 500;
+    @include font;
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: 500;
+}
+
+.header__phone{
+    font-weight: 700;
+}
+
+
+.banner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner__title{
+    @include font;
+    font-weight: 700;
+    margin: 0;
+    font-size: 30px;
+}
+
+.banner__description{
+    max-width: 434px;
+    margin:0;
+    font-size: 15px;
+    @include font;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 30px;
+    margin-bottom: 56px;
+}
+
+.banner__button{
+    width: 171px;
+    height: 41px;
+    background-color: #5551F7;
+    font-size: 13px;
+    font-weight: 500;
+    @include font;
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.banner__button_white{
+    background-color: transparent;
+    color: #5551F7;
+    border: 1px solid #5551F7;
+}
+
+.banner__image{
+    margin-top: 21px;
+}
+
+// development
+
+.development{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.development__title{
+    margin-top: 55px;
+    @include font;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.development__stages{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.stages__stage{
+    position: relative;
+}
+
+.stage__number{
+    height: 102px;
+    width: 79px;
+    display: flex;
+    align-items: center;
+}
+
+.stages__stage:nth-child(1){
+    margin-top: 64px;
+}
+
+.stages__stage:nth-child(2){
+    margin-top: 123px;
+}
+
+.stages__stage:nth-child(3){
+    margin-top: 50px;
+}
+
+.stages__stage:nth-child(4){
+    margin-top: 87px;
+}
+
+.circle{
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    left: 30px;
+    width: 113px;
+    height: 113px;
+    border-radius: 113px;
+    background-color: #F2FCFF;
+}
+
+.stage__description{
+    margin:0;
+    width: 211px;
+    @include font;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.development__scroll{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    align-items: center;
+}
+
+.scroll__line{
+    width: 100%;
+    margin-inline: 28px;
+    height: 2px;
+    background-color: #E4E4E4;
+}
+
+.scroll__line_active{
+    width: 50%;
+    background-color:#1C1D28;
+    height: 100%;
+    z-index: 1;
+}
+
