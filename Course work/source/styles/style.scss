@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
 
 *{
@@ -293,13 +294,19 @@ body{
         gap: 25px;
         margin-top: 78px;
         margin-bottom: 78px;
-    }    
+    }
+    @media only screen and (max-width: 930px){
+        justify-content: space-around;
+    }        
 }
 
 .our-team__person-card{
     max-width: 270px;
     @media only screen and (max-width: 1210px){
         max-width: 227px;
+    }    
+    @media only screen and (max-width: 1023px){
+        max-width: 280px;
     }    
 }
 
@@ -346,6 +353,9 @@ body{
         font-size: 14px;
         margin-top: 22px;
     }  
+    @media only screen and (max-width: 1023px){
+        margin-top: 38px;
+    }    
 }
 
 .person-card__social{
@@ -353,6 +363,9 @@ body{
     @media only screen and (max-width: 1210px){
         margin-top: 39px;
     }  
+    @media only screen and (max-width: 1023px){
+        margin-top: 55px;
+    }   
 }
 
 .person-card__social img{
@@ -362,8 +375,93 @@ body{
         width: 33px;
         height: 33px;
     }  
+    @media only screen and (max-width: 1023px){
+        width: 40px;
+        height: 40px;
+    } 
 }
 
 .person-card__social img:nth-child(2){
     margin-inline: 6px;
+}
+
+
+// testimonials
+
+.main-container__testimonials{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials__content-wrapper{
+    display: flex;
+    @media only screen and (max-width: 1200px){
+        flex-direction: column;
+    }
+}
+
+.testimonials__image{
+    
+    max-width: 740px;
+    width:100%;
+
+    img{
+        width: 100%;
+    }
+}
+
+.testimonials__feedback{
+    max-width: 770px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5C3249;
+    flex-direction: column;
+}
+
+.feedback__quote{
+    font-size: 36px;
+    font-style: italic;
+    font-family: 'Cardo', sans-serif;
+    font-weight: 400;
+    line-height: 49px;
+    color: white;
+    max-width:471px;
+    max-height: 230px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    @media only screen and (max-width: 1200px){
+        font-size: 24px;
+        line-height: 33px;
+        max-width: 330px;
+        max-height: 156px;
+    }
+}
+
+.feedback__person{
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 15px;
+    color: white;
+    max-width: 471px;
+    width: 100%;
+    text-transform: uppercase;
+    @media only screen and (max-width: 1200px){
+        font-size: 12px;
+        max-width: 330px;
+    }
+}
+
+.testimonials__dots{
+    display: flex;
+    justify-content: space-between;
+    gap: 26px;
+    width: auto;
 }
