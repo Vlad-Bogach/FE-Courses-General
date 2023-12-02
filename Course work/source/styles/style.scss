@@ -278,3 +278,92 @@ body{
         margin-top: 13px;
     }
 }
+
+// our team section
+
+.main-container__our-team{
+    @extend .main-container__features;
+}
+
+.our-team__wrapper{
+    @extend .features__wrapper;
+    margin-top: 114px;
+    margin-bottom: 114px;
+    @media only screen and (max-width: 1210px){
+        gap: 25px;
+        margin-top: 78px;
+        margin-bottom: 78px;
+    }    
+}
+
+.our-team__person-card{
+    max-width: 270px;
+    @media only screen and (max-width: 1210px){
+        max-width: 227px;
+    }    
+}
+
+.person-card__photo img{
+    width: 100%;
+}
+
+.person-card__name{
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #2D3033;
+    margin-top: 30px;
+    @media only screen and (max-width: 1210px){
+        font-size: 18px;
+        margin-top: 25px;
+    }    
+}
+
+.person-card__post{
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #FF4343;
+    margin-top: 5px;
+    @media only screen and (max-width: 1210px){
+        font-size: 14px;
+        margin-top: 5px;
+    }    
+}
+
+.person-card__description{
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #6C7279;
+    margin-top: 18px;
+    @media only screen and (max-width: 1210px){
+        font-size: 14px;
+        margin-top: 22px;
+    }  
+}
+
+.person-card__social{
+    margin-top: 38px;
+    @media only screen and (max-width: 1210px){
+        margin-top: 39px;
+    }  
+}
+
+.person-card__social img{
+    width: 39px;
+    height: 39px;
+    @media only screen and (max-width: 1210px){
+        width: 33px;
+        height: 33px;
+    }  
+}
+
+.person-card__social img:nth-child(2){
+    margin-inline: 6px;
+}
