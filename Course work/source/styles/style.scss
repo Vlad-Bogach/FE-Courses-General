@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap');
 
 *{
     padding: 0;
@@ -501,4 +501,97 @@ body{
 
 .dots__dot_active{
     background-color: #5C3249;
+}
+
+//download
+
+.main-container__download{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download__wrapper{
+    max-width: 1170px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 114px;
+    margin-bottom: 114px;
+    @media only screen and (max-width: 1024px){
+        margin: 78px 20px 78px 20px;
+    }
+    @media only screen and (max-width: 585px){
+        margin: 35px 20px 45px 20px;
+    }
+}
+
+.download__title{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+    @media only screen and (max-width: 1024px){
+        height: 60px;
+        font-size: 24px;
+    }
+    @media only screen and (max-width: 585px){
+        text-align: center;
+        height: unset;
+        padding: 24px 0 24px 0;
+    }
+    @media only screen and (max-width: 585px){
+        font-size: 18px;
+    }
+}
+
+.download__description{
+    width: 100%;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    @media only screen and (max-width: 1024px){
+        height: 16px;
+        font-size: 14px;
+    }
+    @media only screen and (max-width: 585px){
+        text-align: center;
+        height: unset;
+    }
+    @media only screen and (max-width: 320px){
+        font-size: 13px;
+        margin-top: 3px;
+    }
+}
+
+.download__button{
+    @extend .banner__button;
+    margin-top: 48px;
+    margin-bottom: unset;
+    @media only screen and (max-width: 1024px){ 
+        margin-top: 43px;
+        font-size: 18px;
+        width: 314px;
+    }
+
+    @media only screen and (max-width: 354px){
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 320px){
+        margin-top: 11px;
+    }
 }
