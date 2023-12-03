@@ -611,6 +611,9 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #353C65;
+    @media only screen and (max-width: 1030px){
+        min-height: 169px;
+    }
 }
 
 .footer__wrapper{
@@ -619,6 +622,12 @@ body{
     display: flex;
     justify-content: space-between;
     margin-inline: 20px;
+    @media only screen and (max-width: 750px){
+        flex-direction: column;
+        align-items: center;
+        margin-top: 34px;
+        margin-bottom: 34px;
+    }
 }
 
 .footer__element{
@@ -627,6 +636,24 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media only screen and (max-width: 1030px){
+        max-width: 315px;
+    }
+    @media only screen and (max-width: 750px){
+        max-width: 280px;
+    }
+}
+
+.footer__social{
+    @media only screen and (max-width: 750px){
+        margin-top: 69px;
+    }
+}
+
+.footer__about{
+    @media only screen and (max-width: 750px){
+        margin-top: 59px;
+    }
 }
 
 .location__title{
@@ -638,6 +665,14 @@ body{
     color: white;
     margin-bottom: 29px;
     text-align: center;
+    @media only screen and (max-width: 1030px){
+        height: 16px;
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+    @media only screen and (max-width: 1030px){
+        margin-bottom: 34px;
+    }
 }
 
 .location__description{
@@ -650,23 +685,48 @@ body{
     @extend .location__title;
     text-transform: uppercase;
     margin-bottom: 49px;
+    @media only screen and (max-width: 1030px){
+        margin-bottom: 33px;
+    }
+    @media only screen and (max-width: 1030px){
+        margin-bottom: 37px;
+    }
 }
 
 .social__buttons{
     display: flex;
     justify-content: space-between;
     gap: 27px;
+    @media only screen and (max-width: 1030px){
+        gap: 23px;
+    }
+}
+
+.social__button{
+    img{
+        @media only screen and (max-width: 1030px){
+            width: 33px;
+            height: 33px;
+        }
+    }
 }
 
 .about__title{
     @extend .location__title;
     text-transform: uppercase;
     margin-bottom: 29px;
+    @media only screen and (max-width: 1030px){
+        margin-bottom: 16px;
+    }
+    @media only screen and (max-width: 750px){
+        margin-bottom: 39px;
+    }
 }
 
 .about__description{
     @extend .location__description;
     height: unset;
+    text-transform: capitalize;
 }
 
 .footer__copyright{
@@ -684,8 +744,12 @@ body{
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
+    margin-inline: 20px;
     color: #808080;
     span{
         color: white;
+    }
+    @media only screen and (max-width: 1030px){
+        font-size: 14px;
     }
 }
