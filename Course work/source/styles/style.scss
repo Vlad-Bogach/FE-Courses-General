@@ -396,18 +396,20 @@ body{
 
 .testimonials__content-wrapper{
     display: flex;
-    @media only screen and (max-width: 1200px){
-        flex-direction: column;
+    @media only screen and (max-width: 860px){
+         flex-direction: column;
     }
 }
 
 .testimonials__image{
-    
     max-width: 740px;
-    width:100%;
-
+    width: 100%;
     img{
         width: 100%;
+        display: flex;
+    }
+    @media only screen and (max-width: 860px){
+        max-width: 100%;
     }
 }
 
@@ -420,6 +422,10 @@ body{
     justify-content: center;
     background-color: #5C3249;
     flex-direction: column;
+    @media only screen and (max-width: 860px){
+        max-width: 100%;
+        justify-content: flex-start;
+    }
 }
 
 .feedback__quote{
@@ -442,6 +448,13 @@ body{
         max-width: 330px;
         max-height: 156px;
     }
+    @media only screen and (max-width: 860px){
+        text-align: center;
+        max-width: 275px;
+        height: 206px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 .feedback__person{
@@ -457,11 +470,35 @@ body{
         font-size: 12px;
         max-width: 330px;
     }
+    @media only screen and (max-width: 860px){
+        text-align: center;
+        margin-bottom: 95px;
+    }
 }
 
 .testimonials__dots{
     display: flex;
     justify-content: space-between;
-    gap: 26px;
-    width: auto;
+    width: 170px;
+    margin: auto;
+    margin-top: 31px;
+    @media only screen and (max-width: 1200px){
+        margin-top: 24px;
+    }
+}
+
+.dots__dot{
+    width: 14px;
+    height: 14px;
+    border-radius: 14px;
+    border: 1px solid #5C3249;
+    box-sizing: border-box;
+    @media only screen and (max-width: 1200px){
+        width: 9.49px;
+        height: 9.49px;
+    }
+}
+
+.dots__dot_active{
+    background-color: #5C3249;
 }
