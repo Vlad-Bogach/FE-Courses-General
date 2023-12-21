@@ -1,0 +1,14 @@
+{
+  "name": "parcel-src",
+  "version": "1.0.0",
+  "description": "",
+  "source": "./index.html",
+  "scripts": {
+    "start": "parcel serve --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.10.3"
+  }
+}
